@@ -10,12 +10,12 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://100.88.73.39:13307/springbooth44gn?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true&useSSL=false
-#    username: root
-#    password: 1qaz@WSX
-    url: jdbc:mysql://192.168.55.58:13307/springbooth44gn?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://100.88.73.39:13307/springbooth44gn?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true&useSSL=false
     username: root
     password: 1qaz@WSX
+#    url: jdbc:mysql://192.168.55.58:13307/springbooth44gn?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true&useSSL=false
+#    username: root
+#    password: 1qaz@WSX
 
   #        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
   #        url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=springbooth44gn
