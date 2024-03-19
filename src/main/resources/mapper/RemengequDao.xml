@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.RemengequDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.RemengequEntity" id="remengequMap">
+        <result property="songname" column="songname"/>
+        <result property="singer" column="singer"/>
+        <result property="gequfenlei" column="gequfenlei"/>
+        <result property="fengmian" column="fengmian"/>
+        <result property="biaoqian" column="biaoqian"/>
+        <result property="zhuanjimingcheng" column="zhuanjimingcheng"/>
+        <result property="faxingriqi" column="faxingriqi"/>
+        <result property="geci" column="geci"/>
+        <result property="songfile" column="songfile"/>
+        <result property="clicktime" column="clicktime"/>
+        <result property="clicknum" column="clicknum"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.RemengequVO" >
+		SELECT * FROM remengequ  remengequ         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.RemengequVO" >
+		SELECT  remengequ.* FROM remengequ  remengequ 	
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.RemengequView" >
+
+		SELECT  remengequ.* FROM remengequ  remengequ 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.RemengequView" >
+		SELECT * FROM remengequ  remengequ <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+
+</mapper>

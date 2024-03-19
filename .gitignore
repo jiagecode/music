@@ -1,0 +1,4 @@
+target/
+src/test/
+src/main/resources/admin/node_modules/
+src/main/resources/front/node_modules/
